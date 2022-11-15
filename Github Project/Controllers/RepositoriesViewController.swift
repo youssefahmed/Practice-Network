@@ -8,7 +8,7 @@
 import UIKit
 
 class RepositoriesViewController: UIViewController {
-
+    
     @IBOutlet weak var repositoriesTableView: UITableView!
     var repository : [Repository] = []
     var numberOfPage = 10
@@ -22,6 +22,8 @@ class RepositoriesViewController: UIViewController {
     }
     
     func setupUi(){
+        repositoriesTableView.dataSource = self
+        repositoriesTableView.delegate = self
         repositoriesTableView.register(UINib(nibName: String(describing:RepositoryCell.self), bundle: nil), forCellReuseIdentifier: String(describing:RepositoryCell.self))
     }
     

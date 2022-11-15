@@ -17,24 +17,35 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HB-LA-SHz">
-                        <rect key="frame" x="5" y="5" width="310" height="85"/>
+                        <rect key="frame" x="186" y="4" width="130" height="87"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="85" id="qvE-IL-dLX"/>
+                            <constraint firstAttribute="height" constant="87" id="8gJ-PR-UIx"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-Jj-Yo5">
+                        <rect key="frame" x="4" y="4" width="114" height="87"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87" id="ay4-xv-NGG"/>
+                            <constraint firstAttribute="width" constant="114" id="n4c-4Q-jkw"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1HB-LA-SHz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="35j-uC-p2h"/>
-                    <constraint firstAttribute="bottom" secondItem="1HB-LA-SHz" secondAttribute="bottom" constant="5" id="8E4-au-nFw"/>
-                    <constraint firstAttribute="trailing" secondItem="1HB-LA-SHz" secondAttribute="trailing" constant="5" id="IhQ-ZJ-mLd"/>
-                    <constraint firstItem="1HB-LA-SHz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="i1A-yu-K1p"/>
+                    <constraint firstAttribute="bottom" secondItem="1HB-LA-SHz" secondAttribute="bottom" constant="4" id="1nX-In-p5g"/>
+                    <constraint firstItem="nXr-Jj-Yo5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Fdb-bi-N7F"/>
+                    <constraint firstItem="1HB-LA-SHz" firstAttribute="leading" secondItem="nXr-Jj-Yo5" secondAttribute="trailing" constant="68" id="Tgg-0v-0UU"/>
+                    <constraint firstItem="1HB-LA-SHz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="kVc-jW-gFa"/>
+                    <constraint firstAttribute="trailing" secondItem="1HB-LA-SHz" secondAttribute="trailing" constant="4" id="nlp-1V-sz2"/>
+                    <constraint firstAttribute="bottom" secondItem="nXr-Jj-Yo5" secondAttribute="bottom" constant="4" id="oKs-jq-cDb"/>
+                    <constraint firstItem="nXr-Jj-Yo5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="tRg-aB-edS"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="repositoryImage" destination="nXr-Jj-Yo5" id="jb5-pM-DLL"/>
                 <outlet property="repositoryNameLabel" destination="1HB-LA-SHz" id="1PN-JL-V01"/>
             </connections>
             <point key="canvasLocation" x="18.320610687022899" y="50.352112676056343"/>

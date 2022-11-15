@@ -8,7 +8,10 @@
 import Foundation
 
 struct Repository: Codable {
-    
     let name : String?
+    let owner: Owner?
 }
- 
+struct Owner : Codable {
+    let avatar_url : String?
+   
+}
